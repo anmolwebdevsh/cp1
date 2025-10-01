@@ -889,7 +889,7 @@ body {
 .machines-collage {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 300px);
+    grid-template-rows: repeat(3, 300px);
     gap: 15px;
     width: 80vw;
     max-width: 1800px;
@@ -1286,10 +1286,7 @@ body {
     }
 }
 
-@media (min-width: 100px) and (max-width: 400px) {
-    .container {
-        padding: 3rem 0;
-    }
+@media (max-width: 430px) {
 
     /* Header */
     .logo img {
@@ -1332,7 +1329,7 @@ body {
 
     /* About */
     .about-content {
-        width: 50%;
+        width: 100%;
         margin-left: 50%;
     }
 
@@ -1341,16 +1338,17 @@ body {
     }
 
     .about-content h2 b {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
     }
 
     .about-content p {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .about::before {
         content: '';
-        height: 66vh;
+        /* height: 175vh; */
+        width: 100%;
     }
 
     .company-grid {
@@ -1362,31 +1360,45 @@ body {
 
     .hero-content {
         margin-top: 15rem;
-        margin-left: 2rem;
         text-align: center;
     }
 
     .about-content {
         width: 100%;
         margin-left: 0;
-        padding: 28px;
+        padding: 15px;
         background: rgba(255, 255, 255, 1);
         border-radius: 15px 15px 0 0;
         z-index: 2;
     }
 
     /* Products */
-    .products {
+    /* .products {
         height: 120vh;
         padding-bottom: 0;
-    }
+    } */
 
     .products h2 {
         font-size: 2rem;
     }
 
     .cards-track img {
-        height: 400px;
+        height: 450px;
+    }
+
+    .cards-slider {
+        width: 1000%;
+        max-width: 1000vw;
+        /* overflow: hidden; */
+        position: relative;
+        margin-left: 0;
+    }
+
+    .products .cards-track {
+        display: flex;
+        gap: 2rem;
+        animation: scroll 20s linear infinite !important;
+        padding: 30px 20px;
     }
 
     /* Capabilities */
@@ -1399,7 +1411,7 @@ body {
 
     .capabilities::before {
         width: 100%;
-        height: 50%;
+        height: 100%;
         position: absolute;
         top: 0;
         left: 0;
@@ -1413,7 +1425,7 @@ body {
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: center;
         padding-bottom: 20px;
     }
 
@@ -1454,7 +1466,7 @@ body {
     /* Industries */
     .industries {
         height: auto;
-        padding: 40px 0;
+        /* padding: 409px 0; */
     }
 
     .industries h2 {
@@ -1480,7 +1492,6 @@ body {
         min-height: 100vh;
         padding: 100px 0;
         overflow-y: auto;
-        margin-top: 16rem;
     }
 
     .machines h2 {
@@ -1544,6 +1555,7 @@ body {
     .company-images h2 {
         font-size: 1.6rem;
         margin-bottom: 2rem;
+        padding-top: 1rem;
     }
 
     .company-grid {
@@ -1602,310 +1614,7 @@ body {
 
 }
 
-@media (min-width: 401px) and (max-width: 454px) {
-    .container {
-        padding: 3rem 0;
-    }
-
-    /* Header */
-    .logo img {
-        height: 60px;
-        left: 0;
-    }
-
-    .nav {
-        display: none;
-    }
-
-    .header .container {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    /* Hero */
-    .hero {
-        height: 100vh;
-        padding: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .hero-content {
-        margin-top: 35rem;
-        text-align: center;
-    }
-
-    .hero-content h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero-content p {
-        margin-left: 0;
-        font-size: 1rem;
-    }
-
-    /* About */
-    .about-content {
-        width: 50%;
-        margin-left: 50%;
-    }
-
-    .about-content h2 {
-        font-size: 2rem;
-    }
-
-    .about-content h2 b {
-        font-size: 2.5rem;
-    }
-
-    .about-content p {
-        font-size: 1.1rem;
-    }
-
-    .about::before {
-        content: '';
-        height: 66vh;
-    }
-
-    .company-grid {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        width: 90%;
-    }
-
-    .hero-content {
-        margin-top: 15rem;
-        margin-left: 2rem;
-        text-align: center;
-    }
-
-    .about-content {
-        width: 100%;
-        margin-left: 0;
-        padding: 28px;
-        background: rgba(255, 255, 255, 1);
-        border-radius: 15px 15px 0 0;
-        z-index: 2;
-    }
-
-    /* Products */
-    .products {
-        height: 80vh;
-        padding-bottom: 0;
-    }
-
-    .products h2 {
-        font-size: 2rem;
-    }
-
-    .cards-track img {
-        height: 400px;
-    }
-
-    /* Capabilities */
-    .capabilities {
-        height: 100vh;
-        padding: 0;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-
-    .capabilities::before {
-        width: 100%;
-        height: 50%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 1;
-        mask: none;
-        -webkit-mask: none;
-        margin-top: 0.4rem;
-    }
-
-    .capabilities .container {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        padding-bottom: 20px;
-    }
-
-    .flexcontainer {
-        margin-left: 0;
-        padding: 0;
-        width: 100%;
-        margin-top: auto;
-    }
-
-    .capabilities-content {
-        width: 100%;
-        margin-left: 0;
-        padding: 20px;
-        background: rgba(255, 255, 255, 1);
-        border-radius: 15px 15px 0 0;
-        margin-top: auto;
-        z-index: 2;
-    }
-
-    .capabilities h2 {
-        width: 100%;
-        margin-left: 0;
-        font-size: 1.3rem;
-        text-align: center;
-        margin-bottom: 1rem;
-        margin-top: 1rem;
-    }
-
-    .capabilities p {
-        width: 100%;
-        margin-left: 0;
-        font-size: 1rem;
-        padding: 0;
-        text-align: justify;
-    }
-
-    /* Industries */
-    .industries {
-        height: auto;
-        padding: 40px 0;
-    }
-
-    .industries h2 {
-        font-size: 2rem;
-    }
-
-    .industries h2 b {
-        font-size: 2.5rem;
-    }
-
-    .industries p {
-        font-size: 1rem;
-        padding: 0 20px;
-    }
-
-    .industries img {
-        max-width: 90%;
-    }
-
-    /* Machines */
-    .machines {
-        height: auto;
-        min-height: 100vh;
-        padding: 100px 0;
-        overflow-y: auto;
-        margin-top: 16rem;
-    }
-
-    .machines h2 {
-        font-size: 2rem;
-        margin-bottom: 2rem;
-    }
-
-    .machines h2 b {
-        font-size: 2.5rem;
-    }
-
-    .machines-collage {
-        display: flex !important;
-        flex-direction: column !important;
-        gap: 15px !important;
-        width: 90% !important;
-        margin: 0 auto !important;
-        grid-template-columns: none !important;
-        grid-template-rows: none !important;
-        left: auto !important;
-        transform: none !important;
-    }
-
-    */
-
-    /* .machine-img {
-        height: 200px !important;
-        width: 100% !important;
-        grid-column: auto !important;
-        grid-row: auto !important;
-    }
-
-    /* Certificates */
-    .certificates {
-        height: auto;
-        min-height: 100vh;
-        padding: 20px 0;
-    }
-
-    .certificates h2 {
-        font-size: 1.6rem;
-        margin-bottom: 2rem;
-    }
-
-    .certificates h2 b {
-        font-size: 2rem;
-    }
-
-    .certificates-grid {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 60px;
-        max-width: 90%;
-        margin: 0 auto;
-        grid-template-columns: none;
-    }
-
-    .certificate-img {
-        height: auto;
-        width: 90%;
-        max-width: 400px;
-    }
-
-    /* Company Images - Mobile */
-    .company-images {
-        padding: 0;
-    }
-
-    .company-images h2 {
-        font-size: 1.6rem;
-        margin-bottom: 2rem;
-    }
-
-    .company-grid {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        width: 90%;
-
-    }
-
-    .company-img {
-        height: 200px;
-        width: 100%;
-    }
-
-    /* Footer */
-    .footer {
-        height: auto;
-        padding: 2rem 0;
-    }
-
-    .footer-logo img {
-        height: 60px;
-    }
-
-    .footer-details h3 {
-        font-size: 1.4rem;
-    }
-
-    /* Page Numbers */
-    .page-number {
-        font-size: 1rem;
-        padding: 3px 10px;
-    }
-}
-
-@media (min-width: 455px) and (max-width: 769px) {
+@media (min-width: 431px) and (max-width: 767px) {
     .container {
         padding: 3rem 0;
     }
@@ -1951,10 +1660,10 @@ body {
     }
 
     /* About */
-    .about-content {
+    /* .about-content {
         width: 50%;
         margin-left: 50%;
-    }
+    } */
 
     .about-content h2 {
         font-size: 2rem;
@@ -1990,7 +1699,7 @@ body {
         width: 100%;
         margin-left: 0;
         padding: 28px;
-        background: rgba(255, 255, 255, 0.85);
+        background: rgba(255, 255, 255, 1);
         border-radius: 15px 15px 0 0;
         z-index: 2;
     }
@@ -2210,11 +1919,50 @@ body {
     }
 }
 
-@media (min-width: 770px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1024px) {
 
-    /* About Section - Tablet */
+    /* Header */
+    .logo img {
+        height: 60px;
+        left: 0;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .header .container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Hero */
+    .hero {
+        height: 100vh;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-content {
+        margin-top: 35rem;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2.9rem;
+    }
+
+    .hero-content p {
+        margin-left: 0;
+        font-size: 1.4rem;
+    }
+
+    /* About */
     .about-content {
-        width: 50%;
+        width: 100%;
         margin-left: 50%;
     }
 
@@ -2223,11 +1971,17 @@ body {
     }
 
     .about-content h2 b {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
     }
 
     .about-content p {
         font-size: 1.4rem;
+    }
+
+    .about::before {
+        content: '';
+        /* height: 175vh; */
+        width: 100%;
     }
 
     .company-grid {
@@ -2239,28 +1993,48 @@ body {
 
     .hero-content {
         margin-top: 15rem;
-        margin-left: 2rem;
         text-align: center;
     }
 
     .about-content {
         width: 100%;
         margin-left: 0;
-        background: rgba(255, 255, 255, 0.85);
+        padding: 15px;
+        background: rgba(255, 255, 255, 1);
         border-radius: 15px 15px 0 0;
         z-index: 2;
-        padding: 28px;
     }
 
-    .about::before {
-        content: '';
-        height: 100%;
+    /* Products */
+    /* .products {
+        height: 120vh;
+        padding-bottom: 0;
+    } */
+
+    .products h2 {
+        font-size: 2rem;
     }
 
-    .industries p {
-        font-size: 1.4rem;
+    .cards-track img {
+        height: 600px;
     }
 
+    .cards-slider {
+        width: 600%;
+        max-width: 600vw;
+        /* overflow: hidden; */
+        position: relative;
+        margin-left: 0;
+    }
+
+    .products .cards-track {
+        display: flex;
+        gap: 2rem;
+        animation: scroll 20s linear infinite !important;
+        padding: 30px 20px;
+    }
+
+    /* Capabilities */
     .capabilities {
         height: 100vh;
         padding: 0;
@@ -2270,20 +2044,21 @@ body {
 
     .capabilities::before {
         width: 100%;
-        height: 50%;
+        height: 100%;
         position: absolute;
         top: 0;
         left: 0;
         opacity: 1;
         mask: none;
         -webkit-mask: none;
+        margin-top: 0.4rem;
     }
 
     .capabilities .container {
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: center;
         padding-bottom: 20px;
     }
 
@@ -2307,7 +2082,7 @@ body {
     .capabilities h2 {
         width: 100%;
         margin-left: 0;
-        font-size: 2rem;
+        font-size: 1.5rem;
         text-align: center;
         margin-bottom: 1rem;
         margin-top: 1rem;
@@ -2321,83 +2096,323 @@ body {
         text-align: justify;
     }
 
-    /* .machines-collage {
-        justify-content: center;
-        place-content: center;
-        margin: 0 auto;
-        width: 85%;
-    } */
-    /* .machines-collage {
-        display: flex !important;
-        flex-direction: column !important;
-        gap: 15px !important;
-        width: 90% !important;
-        margin: 0 auto !important;
-        grid-template-columns: none !important;
-        grid-template-rows: none !important;
-        left: auto !important;
-        transform: none !important;
+    /* Industries */
+    .industries {
+        height: auto;
+        /* padding: 409px 0; */
     }
 
-    .machine-img {
-        height: 180px;
-        width: 100%;
-        grid-column: auto;
-        grid-row: auto;
-    } */
-    .modal-body p {
-        font-size: 1.2rem;
+    .industries h2 {
+        font-size: 2rem;
     }
 
-    .subcategories-list {
-        font-size: 1.4rem;
-    }
-
-    .footer-details p {
-        font-size: 1.2rem;
-    }
-
-    .footer-copyright p {
-        font-size: 1.2rem;
-    }
-}
-
-@media (min-width: 2000px) {
-    .about-content {
-        margin-left: 29vw;
-    }
-
-    .about-content p {
-        font-size: 1.7rem !important;
-    }
-
-    .cards-track img {
-        height: 700px;
+    .industries h2 b {
+        font-size: 2.5rem;
     }
 
     .industries p {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
+        padding: 0 20px;
     }
 
-    .footer-details p {
+    .industries img {
+        max-width: 90%;
+    }
+
+    /* Machines */
+    .machines {
+        height: auto;
+        min-height: 100vh;
+        padding: 100px 0;
+        overflow-y: auto;
+    }
+
+    .machines h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .machines h2 b {
+        font-size: 2.5rem;
+    }
+
+
+    .company-images h2 {
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+        padding-top: 1rem;
+    }
+
+    .company-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 90%;
+
+    }
+
+    .company-img {
+        height: 200px;
+        width: 100%;
+    }
+
+    /* Footer */
+    .footer {
+        height: auto;
+        padding: 2rem 0;
+    }
+
+    .footer-logo img {
+        height: 60px;
+    }
+
+    .footer-details h3 {
         font-size: 1.4rem;
     }
 
-    .footer-copyright p {
-        font-size: 1.2rem;
+    /* Page Numbers */
+    .page-number {
+        font-size: 1rem;
+        padding: 3px 10px;
     }
 
-    .hero-content {
-        margin-top: 40rem;
+    .modal-body p {
+        width: 100%;
+        margin-left: 0;
+        padding: 0 10px;
+        text-align: justify;
+        font-size: 1.25rem;
     }
 
-    .gst {
+    .modal-content-area {
+        padding: 10px;
+        flex: 1;
+    }
+
+    .modal-body p {
+        width: 100%;
+        margin-left: 0;
+        padding: 0 0px;
+        text-align: justify;
         font-size: 1.1rem;
     }
 
-    .logo img {
-        height: 90px;
+    .footer-details p {
+        font-size: 1.5rem;
     }
+
+    .footer-copyright p {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    /* Header */
+    .logo img {
+        height: 60px;
+        left: 0;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .header .container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Hero */
+    .hero {
+        height: 100vh;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-content {
+        margin-top: 35rem;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        margin-left: 0;
+        font-size: 1rem;
+    }
+
+    /* About */
+    .about-content {
+        width: 100%;
+        margin-left: 50%;
+    }
+
+    .about-content h2 {
+        font-size: 2rem;
+    }
+
+    .about-content h2 b {
+        font-size: 1.8rem;
+    }
+
+    .about-content p {
+        font-size: 1rem;
+    }
+
+    .about::before {
+        content: '';
+        /* height: 175vh; */
+        width: 100%;
+    }
+
+    .company-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 90%;
+    }
+
+    .hero-content {
+        margin-top: 15rem;
+        text-align: center;
+    }
+
+    .about-content {
+        width: 100%;
+        margin-left: 0;
+        padding: 15px;
+        background: rgba(255, 255, 255, 1);
+        border-radius: 15px 15px 0 0;
+        z-index: 2;
+    }
+
+    /* Products */
+    /* .products {
+        height: 120vh;
+        padding-bottom: 0;
+    } */
+
+    .products h2 {
+        font-size: 2rem;
+    }
+
+    .cards-track img {
+        height: 450px;
+    }
+
+    .cards-slider {
+        width: 1000%;
+        max-width: 1000vw;
+        /* overflow: hidden; */
+        position: relative;
+        margin-left: 0;
+    }
+
+    .products .cards-track {
+        display: flex;
+        gap: 2rem;
+        animation: scroll 20s linear infinite !important;
+        padding: 30px 20px;
+    }
+
+    /* Capabilities */
+    .capabilities {
+        height: 100vh;
+        padding: 0;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .capabilities::before {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 1;
+        mask: none;
+        -webkit-mask: none;
+        margin-top: 0.4rem;
+    }
+
+    .capabilities .container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+    .flexcontainer {
+        margin-left: 0;
+        padding: 0;
+        width: 100%;
+        margin-top: auto;
+    }
+
+    /* Machines */
+    .machines {
+        height: auto;
+        min-height: 100vh;
+        padding: 100px 0;
+        overflow-y: auto;
+    }
+
+    .machines h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .machines h2 b {
+        font-size: 2.5rem;
+    }
+
+    /* Footer */
+    .footer {
+        height: auto;
+        padding: 2rem 0;
+    }
+
+    .footer-logo img {
+        height: 60px;
+    }
+
+    .footer-details h3 {
+        font-size: 1.4rem;
+    }
+
+    /* Page Numbers */
+    .page-number {
+        font-size: 1rem;
+        padding: 3px 10px;
+    }
+
+    .modal-body p {
+        width: 100%;
+        margin-left: 0;
+        padding: 0 10px;
+        text-align: justify;
+        font-size: 1.25rem;
+    }
+
+    .modal-content-area {
+        padding: 10px;
+        flex: 1;
+    }
+
+    .modal-body p {
+        width: 100%;
+        margin-left: 0;
+        padding: 0 0px;
+        text-align: justify;
+        font-size: 1.1rem;
+    }
+
 }
 
 @media (max-width: 600px) {
