@@ -2247,7 +2247,7 @@ body {
     }
 
     /* About */
-    .about-content {
+    /* .about-content {
         width: 100%;
         margin-left: 50%;
     }
@@ -2266,9 +2266,9 @@ body {
 
     .about::before {
         content: '';
-        /* height: 175vh; */
+        
         width: 100%;
-    }
+    } */
 
     .company-grid {
         display: flex;
@@ -2277,19 +2277,14 @@ body {
         width: 90%;
     }
 
-    .hero-content {
-        margin-top: 15rem;
-        text-align: center;
-    }
-
-    .about-content {
+    /* .about-content {
         width: 100%;
         margin-left: 0;
         padding: 15px;
         background: rgba(255, 255, 255, 1);
         border-radius: 15px 15px 0 0;
         z-index: 2;
-    }
+    } */
 
     /* Products */
     /* .products {
@@ -2306,8 +2301,8 @@ body {
     }
 
     .cards-slider {
-        width: 1000%;
-        max-width: 1000vw;
+        width: 500%;
+        max-width: 500vw;
         /* overflow: hidden; */
         position: relative;
         margin-left: 0;
@@ -2316,12 +2311,12 @@ body {
     .products .cards-track {
         display: flex;
         gap: 2rem;
-        animation: scroll 20s linear infinite !important;
+        animation: scroll 35s linear infinite !important;
         padding: 30px 20px;
     }
 
     /* Capabilities */
-    .capabilities {
+    /* .capabilities {
         height: 100vh;
         padding: 0;
         flex-direction: column;
@@ -2346,7 +2341,7 @@ body {
         flex-direction: column;
         justify-content: center;
         padding-bottom: 20px;
-    }
+    } */
 
     .flexcontainer {
         margin-left: 0;
