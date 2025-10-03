@@ -1359,6 +1359,25 @@ body {
     }
 }
 
+@media (max-height: 700px) and (max-width: 430px) {
+    .hero {
+        background-attachment: scroll;
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+    }
+    
+    .about::before {
+        background-attachment: scroll;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .hero-content {
+        margin-top: 8rem;
+    }
+}
+
 @media (max-width: 430px) {
 
     /* Header */
