@@ -150,6 +150,21 @@ body {
     margin-left: 36vw;
 }
 
+.about-content ul {
+    text-align: justify;
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+    color: #2c3e50;
+    line-height: 1.6;
+    font-weight: 500;
+    padding-left: 1.5rem;
+}
+
+.about-content ul li {
+    margin-bottom: 0.5rem;
+}
+
+
 @media (max-width: 1600px) {
     .about-content {
         width: 50%;
@@ -172,15 +187,15 @@ body {
 .about-content h2 b {
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
-    font-weight: bold;
+    font-weight: 400;
     font-style: normal;
     font-size: 2.9rem;
-    color: #2c3e50;
+    color: #000000;
 }
 
 .about-content p {
     text-align: justify;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 3rem;
     color: #2c3e50;
     line-height: 1.6;
@@ -188,8 +203,8 @@ body {
 }
 
 .about h2 {
-    font-family: 'Times New Roman', serif;
-    font-size: 2.6rem;
+    font-family: "Raleway", sans-serif;
+    font-size: 2.3rem;
     color: #1a1a1a;
     margin-bottom: 1.5rem;
     text-align: left;
@@ -329,6 +344,64 @@ body {
     font-weight: 500;
 }
 
+/* Why Choose Us Section */
+.why-choose-us {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.why-choose-us h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #000000;
+}
+
+.why-choose-us h2 b {
+    color: #000000;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.feature-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.feature-item h3 {
+    font-size: 1.3rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.feature-item p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+
+
 /* Products Section */
 .products {
     padding: 80px 0;
@@ -340,7 +413,7 @@ body {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 3rem;
-    color: #2c3e50;
+    color: #000000;
 }
 
 .cards-slider {
@@ -1313,10 +1386,10 @@ body {
         justify-content: center;
     }
 
-    .hero-content {
+    /* .hero-content {
         margin-top: 35rem;
         text-align: center;
-    }
+    } */
 
     .hero-content h1 {
         font-size: 2.5rem;
@@ -1585,11 +1658,6 @@ body {
         font-size: 1.4rem;
     }
 
-    /* Page Numbers */
-    .page-number {
-        font-size: 1rem;
-        padding: 3px 10px;
-    }
 
     .modal-body p {
         width: 100%;
@@ -1645,10 +1713,10 @@ body {
         justify-content: center;
     }
 
-    .hero-content {
+    /* .hero-content {
         margin-top: 35rem;
         text-align: center;
-    }
+    } */
 
     .hero-content h1 {
         font-size: 2.9rem;
@@ -1702,6 +1770,15 @@ body {
         background: rgba(255, 255, 255, 1);
         border-radius: 15px 15px 0 0;
         z-index: 2;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .why-choose-us h2 {
+        font-size: 2rem;
     }
 
     /* Products */
@@ -1897,7 +1974,6 @@ body {
     }
 
 
-
     /* Footer */
     .footer {
         height: auto;
@@ -1912,11 +1988,6 @@ body {
         font-size: 1.4rem;
     }
 
-    /* Page Numbers */
-    .page-number {
-        font-size: 1rem;
-        padding: 3px 10px;
-    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -1947,7 +2018,7 @@ body {
     }
 
     .hero-content {
-        margin-top: 35rem;
+        margin-top: 25rem;
         text-align: center;
     }
 
@@ -1961,21 +2032,22 @@ body {
     }
 
     /* About */
-    .about-content {
+    /* .about-content {
         width: 100%;
         margin-left: 50%;
-    }
+    } */
 
     .about-content h2 {
-        font-size: 2rem;
+        font-size: 2.8rem;
+        font-family: "Raleway", sans-serif;
     }
 
     .about-content h2 b {
-        font-size: 1.8rem;
+        font-size: 2.6rem;
     }
 
     .about-content p {
-        font-size: 1.4rem;
+        font-size: 1.7rem;
     }
 
     .about::before {
@@ -1991,19 +2063,29 @@ body {
         width: 90%;
     }
 
-    .hero-content {
-        margin-top: 15rem;
-        text-align: center;
-    }
-
     .about-content {
         width: 100%;
         margin-left: 0;
-        padding: 15px;
+        padding: 30px;
         background: rgba(255, 255, 255, 1);
         border-radius: 15px 15px 0 0;
         z-index: 2;
     }
+
+    .about-content ul {
+        text-align: justify;
+        font-size: 1.7rem;
+        margin-bottom: 3rem;
+        color: #2c3e50;
+        line-height: 1.6;
+        font-weight: 500;
+        padding-left: 1.5rem;
+    }
+
+    .about-content ul li {
+        margin-bottom: 0.5rem;
+    }
+
 
     /* Products */
     /* .products {
@@ -2082,7 +2164,7 @@ body {
     .capabilities h2 {
         width: 100%;
         margin-left: 0;
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         text-align: center;
         margin-bottom: 1rem;
         margin-top: 1rem;
@@ -2091,7 +2173,7 @@ body {
     .capabilities p {
         width: 100%;
         margin-left: 0;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         padding: 0;
         text-align: justify;
     }
@@ -2206,7 +2288,8 @@ body {
     }
 }
 
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media (min-width: 1025px) and (max-width: 1440px) and (max-height: 900px) {
+
     /* Header */
     .logo img {
         height: 60px;
@@ -2233,7 +2316,7 @@ body {
     }
 
     .hero-content {
-        margin-top: 35rem;
+        margin-top: 26rem;
         text-align: center;
     }
 
@@ -2408,6 +2491,88 @@ body {
         font-size: 1.1rem;
     }
 
+}
+
+@media (min-width: 1441px) {
+    .hero {
+        height: 100vh;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-content {
+        margin-top: 26rem;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        margin-left: 0;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 2000px){
+    .hero-content {
+        margin-top: 40rem;
+        text-align: center;
+    }
+
+    .about-content {
+        margin-left: 29vw;
+    }
+
+    .about-content p {
+        text-align: justify;
+        font-size: 1.5rem;
+    }
+
+    .about-content ul {
+        text-align: justify;
+        font-size: 1.4rem;
+    }
+
+    .feature-item h3 {
+        font-size: 1.5rem;
+    }
+
+    .feature-item p {
+        font-size: 1.2rem;
+    }
+
+    .industries p {
+        font-size: 1.4rem;
+    }
+
+    .footer {
+        height: auto;
+        padding: 2rem 0;
+    }
+
+    .footer-logo img {
+        height: 60px;
+    }
+
+    .footer-details h3 {
+        font-size: 1.8rem;
+    }
+
+    .footer-details p {
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;}
+
+    .footer-copyright p {
+        font-size: 1.2rem;
+    }
+
+    .cards-track img {
+    height: 650px;
+    }
 }
 
 @media (max-width: 600px) {
